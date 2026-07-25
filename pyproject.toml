@@ -9,6 +9,10 @@ authors = [
     {name = "Jianyuan Wang", email = "jianyuan@robots.ox.ac.uk"},
 ]
 dependencies = [
+    # Apollo's R570 driver supports CUDA 12.8. Install these dependencies from
+    # https://download.pytorch.org/whl/cu128.
+    "torch==2.11.0+cu128",
+    "torchvision==0.26.0+cu128",
     "numpy<2",
     "Pillow",
     "einops",
